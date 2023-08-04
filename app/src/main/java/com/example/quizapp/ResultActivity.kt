@@ -64,6 +64,123 @@ class ResultActivity: AppCompatActivity() {
             tvIncorrect.text="Xato javoblar: $countIncorrect"
 
         }
+        if (getExtraRes?.get(1)==1){
+
+            tvResult1.background=resources.getDrawable(R.drawable.bg_correct)
+            countCorrect++
+            tvCorrect.text="To'g'ri javoblar: $countCorrect"
+
+        }else{
+
+            tvResult1.background=resources.getDrawable(R.drawable.bg_incorrect)
+            countIncorrect++
+            tvIncorrect.text="Xato javoblar: $countIncorrect"
+
+        }
+        if (getExtraRes?.get(2)==4){
+
+            tvResult1.background=resources.getDrawable(R.drawable.bg_correct)
+            countCorrect++
+            tvCorrect.text="To'g'ri javoblar: $countCorrect"
+
+        }else{
+
+            tvResult1.background=resources.getDrawable(R.drawable.bg_incorrect)
+            countIncorrect++
+            tvIncorrect.text="Xato javoblar: $countIncorrect"
+
+        }
+        if (getExtraRes?.get(3)==1){
+
+            tvResult1.background=resources.getDrawable(R.drawable.bg_correct)
+            countCorrect++
+            tvCorrect.text="To'g'ri javoblar: $countCorrect"
+
+        }else{
+
+            tvResult1.background=resources.getDrawable(R.drawable.bg_incorrect)
+            countIncorrect++
+            tvIncorrect.text="Xato javoblar: $countIncorrect"
+
+        }
+        if (getExtraRes?.get(4)==3){
+
+            tvResult1.background=resources.getDrawable(R.drawable.bg_correct)
+            countCorrect++
+            tvCorrect.text="To'g'ri javoblar: $countCorrect"
+
+        }else{
+
+            tvResult1.background=resources.getDrawable(R.drawable.bg_incorrect)
+            countIncorrect++
+            tvIncorrect.text="Xato javoblar: $countIncorrect"
+
+        }
+        if (getExtraRes?.get(5)==4){
+
+            tvResult1.background=resources.getDrawable(R.drawable.bg_correct)
+            countCorrect++
+            tvCorrect.text="To'g'ri javoblar: $countCorrect"
+
+        }else{
+
+            tvResult1.background=resources.getDrawable(R.drawable.bg_incorrect)
+            countIncorrect++
+            tvIncorrect.text="Xato javoblar: $countIncorrect"
+
+        }
+        if (getExtraRes?.get(6)==1){
+
+            tvResult1.background=resources.getDrawable(R.drawable.bg_correct)
+            countCorrect++
+            tvCorrect.text="To'g'ri javoblar: $countCorrect"
+
+        }else{
+
+            tvResult1.background=resources.getDrawable(R.drawable.bg_incorrect)
+            countIncorrect++
+            tvIncorrect.text="Xato javoblar: $countIncorrect"
+
+        }
+        if (getExtraRes?.get(7)==2){
+
+            tvResult1.background=resources.getDrawable(R.drawable.bg_correct)
+            countCorrect++
+            tvCorrect.text="To'g'ri javoblar: $countCorrect"
+
+        }else{
+
+            tvResult1.background=resources.getDrawable(R.drawable.bg_incorrect)
+            countIncorrect++
+            tvIncorrect.text="Xato javoblar: $countIncorrect"
+
+        }
+        if (getExtraRes?.get(8)==4){
+
+            tvResult1.background=resources.getDrawable(R.drawable.bg_correct)
+            countCorrect++
+            tvCorrect.text="To'g'ri javoblar: $countCorrect"
+
+        }else{
+
+            tvResult1.background=resources.getDrawable(R.drawable.bg_incorrect)
+            countIncorrect++
+            tvIncorrect.text="Xato javoblar: $countIncorrect"
+
+        }
+        if (getExtraRes?.get(9)==2){
+
+            tvResult1.background=resources.getDrawable(R.drawable.bg_correct)
+            countCorrect++
+            tvCorrect.text="To'g'ri javoblar: $countCorrect"
+
+        }else{
+
+            tvResult1.background=resources.getDrawable(R.drawable.bg_incorrect)
+            countIncorrect++
+            tvIncorrect.text="Xato javoblar: $countIncorrect"
+
+        }
 
     }
 }
