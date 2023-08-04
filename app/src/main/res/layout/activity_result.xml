@@ -123,8 +123,9 @@
                     <TextView
                         android:id="@+id/tv_answer2_result"
                         android:fontFamily="@font/script"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
                         android:text="2"
                         android:textColor="@color/white"
                         android:textSize="35sp"/>
@@ -140,8 +141,9 @@
                     <TextView
                         android:id="@+id/tv_answer3_result"
                         android:fontFamily="@font/script"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
                         android:text="3"
                         android:textColor="@color/white"
                         android:textSize="35sp"/>
@@ -157,8 +159,9 @@
                     <TextView
                         android:id="@+id/tv_answer4_result"
                         android:fontFamily="@font/script"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
                         android:text="4"
                         android:textColor="@color/white"
                         android:textSize="35sp"/>
@@ -174,8 +177,9 @@
                     <TextView
                         android:id="@+id/tv_answer5_result"
                         android:fontFamily="@font/script"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
                         android:text="5"
                         android:textColor="@color/white"
                         android:textSize="35sp"/>
@@ -215,8 +219,9 @@
                     <TextView
                         android:id="@+id/tv_answer7_result"
                         android:fontFamily="@font/script"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
                         android:text="7"
                         android:textColor="@color/white"
                         android:textSize="35sp"/>
@@ -232,8 +237,9 @@
                     <TextView
                         android:id="@+id/tv_answer8_result"
                         android:fontFamily="@font/script"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
                         android:text="8"
                         android:textColor="@color/white"
                         android:textSize="35sp"/>
@@ -249,8 +255,9 @@
                     <TextView
                         android:id="@+id/tv_answer9_result"
                         android:fontFamily="@font/script"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
                         android:text="9"
                         android:textColor="@color/white"
                         android:textSize="35sp"/>
@@ -266,8 +273,9 @@
                     <TextView
                         android:id="@+id/tv_answer10_result"
                         android:fontFamily="@font/script"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
                         android:text="10"
                         android:textColor="@color/white"
                         android:textSize="35sp"/>
