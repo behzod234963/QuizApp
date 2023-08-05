@@ -15,11 +15,6 @@
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize">
-            <ImageView
-                android:id="@+id/iv_back_to_test"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/pic_back_question"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -308,10 +303,12 @@
                 android:textSize="20sp"
                 android:fontFamily="@font/script"
                 android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
                 app:backgroundTint="@null"
                 android:background="@drawable/bg_b_try_again"/>
             <Button
                 android:id="@+id/b_share_result"
+                android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"

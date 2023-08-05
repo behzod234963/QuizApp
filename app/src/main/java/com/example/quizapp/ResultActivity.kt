@@ -31,6 +31,7 @@ class ResultActivity: AppCompatActivity() {
         setContentView(R.layout.activity_result)
 
         initViews()
+        shareResult()
 
     }
 
@@ -187,6 +188,17 @@ class ResultActivity: AppCompatActivity() {
             val backToName=Intent(this,NameActivity::class.java)
             startActivity(backToName)
 
+        }
+
+    }
+    private fun shareResult(){
+
+        bShare.setOnClickListener {
+
+            val intent=Intent(Intent.ACTION_SEND)
+            intent.type="text/plain"
+            intent.putExtra(Intent.EXTRA_TEXT,"Salom")
+            startActivity(Intent.createChooser(intent,"Share"))
         }
 
     }

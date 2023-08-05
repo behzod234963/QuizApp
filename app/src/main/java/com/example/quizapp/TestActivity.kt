@@ -11,6 +11,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.quizapp.savollar.Savollar
+import kotlin.random.Random
 
 class TestActivity : AppCompatActivity() {
     lateinit var ivBack:ImageView
@@ -94,6 +95,7 @@ class TestActivity : AppCompatActivity() {
         selected = 0
         tvQuestionNumber.text = "Question ${i + 1}/${questions.size}"
         tvQuestion.text = questions[i].savol
+
         rbAnswer1.text = questions[i].javob1
         rbAnswer1.isChecked=false
         rbAnswer2.text = questions[i].javob2
@@ -113,9 +115,10 @@ class TestActivity : AppCompatActivity() {
         questions.add(Savollar("Oktebar revolyutsiyasi qachon bo'lib o'tgan", "1912-yil", "1914-yil", "1917-yil", "1918-yil", 3))
         questions.add(Savollar("Buxoro xoni Abdullaxon II qachon tug'ilgan?", "1540-yil", "1535-yil", "1512-yil", "1533-yil", 4))
         questions.add(Savollar("Xiva xonligining oxirgi xoni kim?", "Said Abdullaxon", "Asfandiyorxon", "Amir Olimxon", "Junaidxon", 1))
-        questions.add(Savollar("Jalol ad-Din Manguberdi nechanchi yilda o'ldirilgan?", "1233-yil", "1231-til", "1232-yil", "1234-yil", 2))
+        questions.add(Savollar("Jalol ad-Din Manguberdi nechanchi yilda o'ldirilgan?", "1233-yil", "1231-yil", "1232-yil", "1234-yil", 2))
         questions.add(Savollar("Nyurnbeg protsessi qachon tugatilgan?", "1945-yil,4-iyul", "1946-yil,10-yanvar", "1946-yil,21dekabr", "1946-yil,1-oktabr", 4))
         questions.add(Savollar("Ikkinchi jahon urushida Germaniya nechanchi kapitulyatsiya qilgan?", "1946-yil", "1945-yil", "1944-yil", "1947-yil", 2))
+        questions.add(Savollar("Холокост qachon boshlangan?", "1932-yil", "1934-yil", "1933-yil", "1935-yil", 3))
     }
     fun backToName(){
 
