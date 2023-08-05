@@ -2,11 +2,13 @@ package com.example.quizapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.quizapp.savollar.Savollar
 
@@ -55,6 +57,7 @@ class TestActivity : AppCompatActivity() {
 
         bSubmitNext.setOnClickListener {
 
+
             if (rbAnswer1.isChecked) {
                 selected = 1
             } else if (rbAnswer2.isChecked) {
@@ -65,10 +68,19 @@ class TestActivity : AppCompatActivity() {
                 selected = 4
             }
             if (selected>0){
-
                 res.add(selected)
                 count++
-                setQuestion(count)
+                    if (count==questions.size){
+
+                        val openResultActivity=Intent(this, ResultActivity::class.java)
+                        openResultActivity.putIntegerArrayListExtra("res",res)
+                        startActivity(openResultActivity)
+
+                    }else{
+
+                        setQuestion(count)
+
+                    }
 
             }
 
@@ -81,13 +93,6 @@ class TestActivity : AppCompatActivity() {
     private fun setQuestion(i: Int) {
         selected = 0
         tvQuestionNumber.text = "Question ${i + 1}/${questions.size}"
-        if (count==questions.size){
-
-            val openResultActivity=Intent(this, ResultActivity::class.java)
-            openResultActivity.putIntegerArrayListExtra("res",res)
-            startActivity(openResultActivity)
-
-        }
         tvQuestion.text = questions[i].savol
         rbAnswer1.text = questions[i].javob1
         rbAnswer1.isChecked=false

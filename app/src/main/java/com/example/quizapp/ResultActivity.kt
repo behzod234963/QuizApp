@@ -1,6 +1,7 @@
 package com.example.quizapp
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -179,6 +180,12 @@ class ResultActivity: AppCompatActivity() {
             tvResult10.background=resources.getDrawable(R.drawable.bg_incorrect)
             countIncorrect++
             tvIncorrect.text="Xato javoblar: $countIncorrect"
+
+        }
+        bTryAgain.setOnClickListener {
+
+            val backToName=Intent(this,NameActivity::class.java)
+            startActivity(backToName)
 
         }
 
