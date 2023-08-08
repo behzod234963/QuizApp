@@ -118,7 +118,6 @@ class TestActivity : AppCompatActivity() {
         questions.add(Savollar("Jalol ad-Din Manguberdi nechanchi yilda o'ldirilgan?", "1233-yil", "1231-yil", "1232-yil", "1234-yil", 2))
         questions.add(Savollar("Nyurnbeg protsessi qachon tugatilgan?", "1945-yil,4-iyul", "1946-yil,10-yanvar", "1946-yil,21dekabr", "1946-yil,1-oktabr", 4))
         questions.add(Savollar("Ikkinchi jahon urushida Germaniya nechanchi kapitulyatsiya qilgan?", "1946-yil", "1945-yil", "1944-yil", "1947-yil", 2))
-        questions.add(Savollar("Холокост qachon boshlangan?", "1932-yil", "1934-yil", "1933-yil", "1935-yil", 3))
     }
     fun backToName(){
 
