@@ -79,6 +79,7 @@
         android:layout_height="250dp"
         android:layout_marginHorizontal="20dp">
         <RadioButton
+            android:checked="false"
             android:id="@+id/rb_answer1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -90,6 +91,7 @@
             android:fontFamily="@font/script"
             android:textColor="@color/black"/>
         <RadioButton
+            android:checked="false"
             android:id="@+id/rb_answer2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -101,6 +103,7 @@
             android:fontFamily="@font/script"
             android:textColor="@color/black"/>
         <RadioButton
+            android:checked="false"
             android:id="@+id/rb_answer3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -112,6 +115,7 @@
             android:fontFamily="@font/script"
             android:textColor="@color/black"/>
         <RadioButton
+            android:checked="false"
             android:id="@+id/rb_answer4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

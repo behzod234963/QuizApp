@@ -3,6 +3,7 @@ package com.example.quizapp
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.RadioButton
@@ -42,7 +43,7 @@ class TestActivity : AppCompatActivity() {
 
 
     private fun initViews() {
-        res=ArrayList<Int>()
+        res=ArrayList()
         val data = intent.getStringExtra("name")
         tvName = findViewById(R.id.tv_name)
         tvQuestion = findViewById(R.id.tv_question)
@@ -85,7 +86,14 @@ class TestActivity : AppCompatActivity() {
 
             }
 
-
+            rbAnswer1.isChecked=false
+            rbAnswer1.visibility=View.VISIBLE
+            rbAnswer2.isChecked=false
+            rbAnswer2.visibility=View.VISIBLE
+            rbAnswer3.isChecked=false
+            rbAnswer3.visibility=View.VISIBLE
+            rbAnswer4.isChecked=false
+            rbAnswer4.visibility=View.VISIBLE
 
         }
 
@@ -97,13 +105,9 @@ class TestActivity : AppCompatActivity() {
         tvQuestion.text = questions[i].savol
 
         rbAnswer1.text = questions[i].javob1
-        rbAnswer1.isChecked=false
         rbAnswer2.text = questions[i].javob2
-        rbAnswer2.isChecked=false
         rbAnswer3.text = questions[i].javob3
-        rbAnswer3.isChecked=false
         rbAnswer4.text = questions[i].javob4
-        rbAnswer4.isChecked=false
     }
 
     private fun loadQuestions() {
