@@ -63,7 +63,7 @@ class ResultActivity: AppCompatActivity() {
 
             tvResult1.background=resources.getDrawable(R.drawable.bg_incorrect)
             countIncorrect++
-            tvIncorrect.text="Xato javoblar: $countIncorrect"
+            tvIncorrect.text="Noto'g'ri javoblar: $countIncorrect"
 
         }
         if (getExtraRes?.get(1)==1){
@@ -76,7 +76,7 @@ class ResultActivity: AppCompatActivity() {
 
             tvResult2.background=resources.getDrawable(R.drawable.bg_incorrect)
             countIncorrect++
-            tvIncorrect.text="Xato javoblar: $countIncorrect"
+            tvIncorrect.text="Noto'g'ri javoblar: $countIncorrect"
 
         }
         if (getExtraRes?.get(2)==4){
@@ -89,7 +89,7 @@ class ResultActivity: AppCompatActivity() {
 
             tvResult3.background=resources.getDrawable(R.drawable.bg_incorrect)
             countIncorrect++
-            tvIncorrect.text="Xato javoblar: $countIncorrect"
+            tvIncorrect.text="Noto'g'ri javoblar: $countIncorrect"
 
         }
         if (getExtraRes?.get(3)==1){
@@ -102,7 +102,7 @@ class ResultActivity: AppCompatActivity() {
 
             tvResult4.background=resources.getDrawable(R.drawable.bg_incorrect)
             countIncorrect++
-            tvIncorrect.text="Xato javoblar: $countIncorrect"
+            tvIncorrect.text="Noto'g'ri javoblar: $countIncorrect"
 
         }
         if (getExtraRes?.get(4)==3){
@@ -115,7 +115,7 @@ class ResultActivity: AppCompatActivity() {
 
             tvResult5.background=resources.getDrawable(R.drawable.bg_incorrect)
             countIncorrect++
-            tvIncorrect.text="Xato javoblar: $countIncorrect"
+            tvIncorrect.text="Noto'g'ri javoblar: $countIncorrect"
 
         }
         if (getExtraRes?.get(5)==4){
@@ -128,7 +128,7 @@ class ResultActivity: AppCompatActivity() {
 
             tvResult6.background=resources.getDrawable(R.drawable.bg_incorrect)
             countIncorrect++
-            tvIncorrect.text="Xato javoblar: $countIncorrect"
+            tvIncorrect.text="Noto'g'ri javoblar: $countIncorrect"
 
         }
         if (getExtraRes?.get(6)==1){
@@ -141,7 +141,7 @@ class ResultActivity: AppCompatActivity() {
 
             tvResult7.background=resources.getDrawable(R.drawable.bg_incorrect)
             countIncorrect++
-            tvIncorrect.text="Xato javoblar: $countIncorrect"
+            tvIncorrect.text="Noto'g'ri javoblar: $countIncorrect"
 
         }
         if (getExtraRes?.get(7)==2){
@@ -154,7 +154,7 @@ class ResultActivity: AppCompatActivity() {
 
             tvResult8.background=resources.getDrawable(R.drawable.bg_incorrect)
             countIncorrect++
-            tvIncorrect.text="Xato javoblar: $countIncorrect"
+            tvIncorrect.text="Noto'g'ri javoblar: $countIncorrect"
 
         }
         if (getExtraRes?.get(8)==4){
@@ -167,7 +167,7 @@ class ResultActivity: AppCompatActivity() {
 
             tvResult9.background=resources.getDrawable(R.drawable.bg_incorrect)
             countIncorrect++
-            tvIncorrect.text="Xato javoblar: $countIncorrect"
+            tvIncorrect.text="Noto'g'ri javoblar: $countIncorrect"
 
         }
         if (getExtraRes?.get(9)==2){
@@ -180,7 +180,7 @@ class ResultActivity: AppCompatActivity() {
 
             tvResult10.background=resources.getDrawable(R.drawable.bg_incorrect)
             countIncorrect++
-            tvIncorrect.text="Xato javoblar: $countIncorrect"
+            tvIncorrect.text="Noto'g'ri javoblar: $countIncorrect"
 
         }
         bTryAgain.setOnClickListener {
@@ -197,7 +197,7 @@ class ResultActivity: AppCompatActivity() {
 
             val intent=Intent(Intent.ACTION_SEND)
             intent.type="text/plain"
-            intent.putExtra(Intent.EXTRA_TEXT,"Salom")
+            intent.putExtra(Intent.EXTRA_TEXT,"To'g'ri javoblar: $countCorrect\nNoto'g'ri javoblar: $countIncorrect")
             startActivity(Intent.createChooser(intent,"Share"))
         }
 
